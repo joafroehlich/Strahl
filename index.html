@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ähnlichkeit, Strahlensatz, Verhältnisgleichung</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Ähnlichkeit, Strahlensatz, Verhältnisgleichung</p>
+  
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+  
+    <!--//Aufgabe 1-->
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 1
+
+Wie lang ist die Kathete a in cm, 
+wenn die Kathete b = 7,8 cm und die Hypotenuse c = 9,8 cm lang sind?</strong></p>
+          <img src="Aufgabe1.jpg" align="middle" >  <button  onclick="window.open('Pytha_Aufgabe1.html');" >Lösung</button></pre>
+
+<!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+Wie lang ist die Hypotenuse c in cm, 
+wenn die Katheten a = 7,3 cm und b = 2,1 cm lang sind?  </strong>
+
+  <img src="Aufgabe1.jpg" align="middle"> c = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="7,6") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="7,6" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="7,6"; window.open('Pytha_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+Eine Leiter ist 6 m lang und steht am Fußpunkt 1,3 m von einer Wand entfernt. 
+In welcher Höhe in m berührt die Leiter die Wand? </strong>
+<button  onclick="window.open('Pytha_Aufgabe3.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Eine Leiter ist 5 m lang. 
+Sie ist genauso hoch wie die Wand, an der sie steht. 
+Wie weit steht der Fußpunkt der Leiter in m von der Wand entfernt, 
+wenn die Leiter die Wand oben 1 m unter der Oberkante berührt?   </strong>
+Er ist <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input> m entfernt. <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p><nobr>
+</pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="3") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="3" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="3"; window.open('Pytha_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5</nobr>
+
+Ein Rechteck ist 4 m lang und 2 m breit. 
+Wie lang ist seine Diagonale d in m?              </strong>
+<button  onclick="window.open('Pytha_Aufgabe5.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Ein gleichseitiges Dreieck hat eine Seitenlänge s von 8 cm.
+Wie groß ist seine Höhe h in cm?                    </strong>
+h = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="6,9") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="6,9" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="6,9"; window.open('Pytha_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7</nobr>
+
+Berechnen Sie x in mm.          </strong> 
+
+<img src="Aufgabe4.jpg" align="middle" >  <button  onclick="window.open('Pytha_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Berechnen Sie h in mm. </strong>
+
+ <img src="Aufgabe5a.jpg" align="middle"> h = <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-color:yellow ></input> mm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="19,9") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="19,9" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="19,9"; window.open('Pytha_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9</nobr>
+
+Berechnen Sie x in mm.          </strong> 
+
+<img src="Aufgabe5.jpg" align="middle" >  <button  onclick="window.open('Pytha_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Berechnen Sie x in mm. </strong>
+
+ <img src="Aufgabe5a.jpg" align="middle"> x = <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-color:yellow ></input> mm <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="17") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="17" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="17"; window.open('Pytha_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 11</nobr>
+
+Ein Sendemast ist 323 m hoch. 
+27 m unterhalb der Spitze sind zwei Halteseile angebracht, die 215 m vom Mast entfernt verankert sind. 
+Zwei weitere Halteseile sind in einer Höhe von 74 m befestigt und 130 m entfernt verankert.
+Berechnen Sie die Länge der beiden Halteseile in m.  </strong> 
+<button  onclick="window.open('Pytha_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 12
+
+Bei einem Wettkampf wird ein Ball so geworfen, dass er 15 m neben der 55 m Marke auftrifft. 
+Wie groß war die Wurfweite w in m tatsächlich? </strong>
+ w = <input type="text" id="Eintrag12" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe12() { 
+                                                
+                          if (Eintrag12.value=="57") {alert("Richtig"); document.getElementById("Pruef12").disabled= true;
+                          }  
+                           
+                          else if (Eintrag12.value!=="57" && Eintrag12.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag12").value="57"; window.open('Pytha_Aufgabe12.html');           
+                          document.getElementById("Pruef12").disabled= true;}
+                               
+                          else if (Eintrag12.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+              
+    <!--//Aufgabe 13--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 13</nobr>
+
+Bei einem Wettkampf springt ein Mädchen 0,52 m neben der Mitte des Weitsprungbalkens schräg ab.
+Es wird von der Mitte des Balkens aus eine senkrechte Weite von 4,48 m gemessen. 
+Wie groß war die Sprungweite w des Mädchens in m tatsächlich?   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe13.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+Ein Baum ist bei einem Sturm in 4 m Höhe abgeknickt. Seine Spitze liegt 15 m vom Stamm entfernt.
+Wie hoch war der Baum in m? </strong>
+Er war <input type="text" id="Eintrag14" maxlength="4" size="1" style= background-color:yellow ></input> m hoch. <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe14() { 
+                                                
+                          if (Eintrag14.value=="19,5") {alert("Richtig"); document.getElementById("Pruef14").disabled= true;
+                          }  
+                           
+                          else if (Eintrag14.value!=="19,5" && Eintrag14.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag14").value="19,5"; window.open('Pytha_Aufgabe14.html');           
+                          document.getElementById("Pruef14").disabled= true;}
+                               
+                          else if (Eintrag14.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 15</nobr>
+
+Ein 25 m hoher Baum ist so abgeknickt, dass seine Spitze 5 m von seinem Fuß entfernt aufliegt.
+In welcher Höhe in m ist er abgeknickt?  </strong> 
+<button  onclick="window.open('Pytha_Aufgabe15.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 16-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+Berechnen Sie von der Hängebrücke die Längen x und y der beiden Spannseile in m.  </strong>
+
+<img src="Aufgabe9.jpg" align="middle"> x = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe16() { 
+                                                
+                          if (Eintrag16.value=="121") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          }  
+                           
+                          else if (Eintrag16.value!=="121" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="121"; window.open('Pytha_Aufgabe16.html');           
+                          document.getElementById("Pruef16").disabled= true;}
+                               
+                          else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 17--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 17</nobr>
+
+Berechnen Sie von dem Klapptisch die Strebenlänge x in cm.   </strong> 
+
+<img src="Aufgabe9a.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe17.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 18-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+Berechnen Sie die Höhe h in cm und die Fläche A des Dreiecks in cm².  </strong>
+
+<img src="Aufgabe10.jpg" align="middle"> A = <input type="text" id="Eintrag18" maxlength="4" size="1" style= background-color:yellow ></input> cm² <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe18() { 
+                                                
+                          if (Eintrag18.value=="23,3") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          }  
+                           
+                          else if (Eintrag18.value!=="23,3" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="23,3"; window.open('Pytha_Aufgabe18.html');           
+                          document.getElementById("Pruef18").disabled= true;}
+                               
+                          else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 19--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 19</nobr>
+
+Berechnen Sie die Länge der Seite s des gleichschenkligen Trapezes in cm.   </strong> 
+
+<img src="Aufgabe10a.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe19.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 20-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+a) Berechnen Sie die Fläche A des Dreiecks in m².  
+b) Die Fläche wird gestrichen. Der Verbrauch an Farbe beträgt 1 l pro 5 m².
+Wie viel l Farbe sind nötig?    </strong>
+
+<img src="Aufgabe11.jpg" align="middle"> A = <input type="text" id="Eintrag20" maxlength="4" size="1" style= background-color:yellow ></input> m² <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe20() { 
+                                                
+                          if (Eintrag20.value=="19,5") {alert("Richtig"); document.getElementById("Pruef20").disabled= true;
+                          }  
+                           
+                          else if (Eintrag20.value!=="19,5" && Eintrag20.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag20").value="19,5"; window.open('Pytha_Aufgabe20.html');           
+                          document.getElementById("Pruef20").disabled= true;}
+                               
+                          else if (Eintrag20.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 21--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 21</nobr>
+
+Ein gleichseitiges Dreieck hat einen Umfang von 60 cm. 
+Wie groß ist seine Fläche A in cm²?    </strong> 
+<button  onclick="window.open('Pytha_Aufgabe21.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 22-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+Eine Rutschbahn ist 1 240 m lang und überwindet einen Höhenunterschied von 220 m. 
+Berechnen Sie die horizontale Entfernung s zwischen Start und Ziel und das Gefälle g in Prozent.  </strong>
+g = <input type="text" id="Eintrag22" maxlength="2" size="1" style= background-color:yellow ></input> % <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe22() { 
+                                                
+                          if (Eintrag22.value=="18") {alert("Richtig"); document.getElementById("Pruef22").disabled= true;
+                          }  
+                           
+                          else if (Eintrag22.value!=="18" && Eintrag22.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag22").value="18"; window.open('Pytha_Aufgabe22.html');           
+                          document.getElementById("Pruef22").disabled= true;}
+                               
+                          else if (Eintrag22.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 23--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 23</nobr>
+
+Berechnen Sie die Seite a und die Höhe h des Dachstuhls in m.   </strong> 
+
+<img src="Aufgabe13.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe23.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 24-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Die Seite AD des rechtwinkligen Dreiecks soll so verlängert werden, 
+dass sie Hypotenuse eines neuen rechtwinkligen Dreiecks wird.
+Wie lang ist diese Hypotenuse in cm?   </strong>
+
+<img src="Aufgabe14.jpg" align="middle"> Es sind <input type="text" id="Eintrag24" maxlength="1" size="1" style= background-color:yellow ></input> cm. <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="9") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          }  
+                           
+                          else if (Eintrag24.value!=="9" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="9"; window.open('Pytha_Aufgabe24.html');           
+                          document.getElementById("Pruef24").disabled= true;}
+                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 25--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 25</nobr>
+
+Berechnen Sie die Länge der Strecke AB in cm.    </strong> 
+
+<img src="Aufgabe15.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe25.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 26-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 26
+
+Berechnen Sie die Fläche A des Dreiecks in cm² und den Umfang U in cm.  </strong>
+
+<img src="Aufgabe16.jpg" align="middle"> U = <input type="text" id="Eintrag26" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe26() { 
+                                                
+                          if (Eintrag26.value=="15,7") {alert("Richtig"); document.getElementById("Pruef26").disabled= true;
+                          }  
+                           
+                          else if (Eintrag26.value!=="15,7" && Eintrag26.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag26").value="15.7"; window.open('Pytha_Aufgabe26.html');           
+                          document.getElementById("Pruef26").disabled= true;}
+                               
+                          else if (Eintrag26.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                   
+                      
+     <!--//Aufgabe 27--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 27</nobr>
+
+In einem rechtwinkligen Dreieck ist die Höhe das n-fache des Hypotenusenabschnitts q. 
+Drücken Sie die Länge der Hypotenuse c durch n und q aus.    </strong> 
+<button  onclick="window.open('Pytha_Aufgabe27.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 28-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 28
+
+Ein senkrecht an einer Wand stehender Stab rutscht 30 cm herunter. 
+Dabei entfernt sich sein Fußpunkt einen halben Meter von der Wand.
+Wie lang ist der Stab in m?        </strong>
+Es sind <input type="text" id="Eintrag28" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe28() { 
+                                                
+                          if (Eintrag28.value=="0,57") {alert("Richtig"); document.getElementById("Pruef28").disabled= true;
+                          }  
+                           
+                          else if (Eintrag28.value!=="0,57" && Eintrag28.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag28").value="0,57"; window.open('Pytha_Aufgabe28.html');           
+                          document.getElementById("Pruef28").disabled= true;}
+                               
+                          else if (Eintrag28.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 29--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 29</nobr>
+
+Die Dreiecke ABC und DAC sollen flächengleich sein. Wie groß müssen a und b in cm sein, 
+wenn c = 5 cm ist und jedes Dreieck eine Fläche A = 30 cm² hat?     </strong> 
+
+<img src="Aufgabe19.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe29.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 30-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 30
+
+Der Punkt B wurde von A und C aus über einen Fluss hinweg anvisiert.
+D liegt auf der Strecke AB.
+Berechnen Sie die Strecke AB in m.    </strong>
+
+<img src="Aufgabe20.jpg" align="middle"> AB = <input type="text" id="Eintrag30" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe30() { 
+                                                
+                          if (Eintrag30.value=="16,7") {alert("Richtig"); document.getElementById("Pruef30").disabled= true;
+                          }  
+                           
+                          else if (Eintrag30.value!=="16,7" && Eintrag30.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag30").value="16,7"; window.open('Pytha_Aufgabe30.html');           
+                          document.getElementById("Pruef30").disabled= true;}
+                               
+                          else if (Eintrag30.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+                      
+       <!--//Aufgabe 31--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 31</nobr>
+
+Eine Lampe hängt zwischen zwei 5 m hohen und 12 m voneinander entfernten Laternenmasten.
+Wie hoch in m darf ein darunter fahrendes Fahrzeug maximal sein, wenn die Lampe an 
+einem 12,10 m langen Stahlseil befestigt ist?   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe31.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 32-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 32
+
+Berechnen Sie die Höhe h einer quadratischen (Seitenlänge 230 m) und
+gleichseitigen (Seitenlänge 219 m) Pyramide und die Höhe s einer Seitenfläche in m.            </strong>
+h = <input type="text" id="Eintrag32" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe32() { 
+                                                
+                          if (Eintrag32.value=="2,9") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
+                          }  
+                           
+                          else if (Eintrag32.value!=="2,9" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="2,9"; window.open('Pytha_Aufgabe32.html');           
+                          document.getElementById("Pruef32").disabled= true;}
+                               
+                          else if (Eintrag32.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 33--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 33</nobr>
+
+Eine Klappleiter hat eine Länge von 3 m. Sie steht am Boden 1,2 m auseinander.
+Welche maximale Höhe h in m ist möglich?        </strong> 
+<button  onclick="window.open('Pytha_Aufgabe33.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 34-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 34
+
+Eine Seilbahn führt von einem Berg (2 140 m) zu einem anderen (2 260 m).
+Die beiden Masten der Seilbahn sind jeweils 10 m hoch. 
+Sie sind auf einer Karte mit dem Maßstab 1 : 10 000 5 cm auseinander.
+Berechnen Sie die Länge l des gespannten Seils in m, wenn es nicht durchhängt.                </strong>
+l = <input type="text" id="Eintrag34" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe34() { 
+                                                
+                          if (Eintrag34.value=="514,2") {alert("Richtig"); document.getElementById("Pruef34").disabled= true;
+                          }  
+                           
+                          else if (Eintrag34.value!=="514,2" && Eintrag34.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag34").value="514,2"; window.open('Pytha_Aufgabe34.html');           
+                          document.getElementById("Pruef34").disabled= true;}
+                               
+                          else if (Eintrag34.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 35--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 35</nobr>
+
+Ein Fahrzeug fährt im Gebirge 6,2 km mit einer Steigung von 5 %.
+Berechnen Sie x und h  in m.           </strong> 
+
+<img src="Aufgabe25.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 36-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 36
+
+Ein rechtwinkliges Dreieck hat eine Höhe von 3 cm und eine Fläche von 12 cm².
+Berechnen Sie die Länge der Hypotenuse c und der Katheten a und b in cm.                  </strong>
+a = <input type="text" id="Eintrag36" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe36() { 
+                                                
+                          if (Eintrag36.value=="7,3") {alert("Richtig"); document.getElementById("Pruef36").disabled= true;
+                          }  
+                           
+                          else if (Eintrag36.value!=="7,3" && Eintrag36.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag36").value="7,3"; window.open('Pytha_Aufgabe36.html');           
+                          document.getElementById("Pruef36").disabled= true;}
+                               
+                          else if (Eintrag36.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 37--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 37</nobr>
+
+Die Katheten eines rechtwinkligen Dreiecks stehen im Verhältnis a : b = 3 : 4.
+Wie lang sind die Katheten in cm und die Fläche A in cm², wenn die Hypotenuse 8 cm lang ist?  </strong> 
+<button  onclick="window.open('Pytha_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 38-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 38
+
+In welchem Verhältnis stehen die Katheten eines rechtwinkligen Dreiecks, 
+das die gleiche Fläche wie ein gleichseitiges Dreieck hat, wenn seine Hypotenuse 8 cm 
+und die Seite s des gleichseitigen Dreiecks 6 cm lang ist?      </strong>
+a : b = <input type="text" id="Eintrag38" maxlength="1" size="1" style= background-color:yellow ></input> : 10 <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe38() { 
+                                                
+                          if (Eintrag38.value=="8") {alert("Richtig"); document.getElementById("Pruef38").disabled= true;
+                          }  
+                           
+                          else if (Eintrag38.value!=="8" && Eintrag38.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag38").value="8"; window.open('Pytha_Aufgabe38.html');           
+                          document.getElementById("Pruef38").disabled= true;}
+                               
+                          else if (Eintrag38.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 39--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 39</nobr>
+
+In einem rechtwinkligen Dreieck sind die Hypotenusenabschnitte p = 5 cm und q = 4 cm. 
+Berechnen Sie die Länge der Katheten in cm und die Fläche A in cm².   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe39.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 40-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 40
+
+In einem rechtwinkligen Dreieck sind die Kathete a = 6 cm und b = 8 cm lang.
+Berechnen Sie den Inkreisradius ri und den Umkreisradius ru in cm.  </strong>
+
+<img src="Aufgabe30.jpg" align="middle"> b = <input type="text" id="Eintrag40" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe40() { 
+                                                
+                          if (Eintrag40.value=="5") {alert("Richtig"); document.getElementById("Pruef40").disabled= true;
+                          }  
+                           
+                          else if (Eintrag40.value!=="5" && Eintrag40.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag40").value="5"; window.open('Pytha_Aufgabe40.html');           
+                          document.getElementById("Pruef40").disabled= true;}
+                               
+                          else if (Eintrag40.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 41--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 41</nobr>
+
+In ein rechtwinkliges Dreieck ist ein Quadrat mit der Seite x einbeschrieben.           
+Drücken Sie x durch die Katheten a und b aus.           </strong> 
+
+<img src="Aufgabe31.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe41.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 42-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 42
+
+In ein rechtwinkliges Dreieck ist ein Quadrat mit der Seite x einbeschrieben.
+Drücken Sie x durch die Hypotenusenabschnitte u und v aus.  </strong>
+
+<img src="Aufgabe32.jpg" align="middle"> x = <span style ="font-size:1.2em;"><math><mfrac><mrow><mi>uv</mi></mrow><msqrt><mi><input type="text" id="Eintrag42" maxlength="5" size="2" style= background-color:yellow ></input></mi></msqrt></mfrac> </math></span> <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe42() { 
+                                                
+                          if (Eintrag42.value=="u²+v²") {alert("Richtig"); document.getElementById("Pruef42").disabled= true;
+                          }  
+                           
+                          else if (Eintrag42.value!=="u²+v²" && Eintrag42.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag42").value="u²+v²"; window.open('Pytha_Aufgabe42.html');           
+                          document.getElementById("Pruef42").disabled= true;}
+                               
+                          else if (Eintrag42.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 43--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 43</nobr>
+
+Berechnen Sie die Diagonale d in einem gleichschenkligen Trapez in cm, 
+wenn die parallelen Seiten 6,4 cm und 3,6 cm und die Höhe 2,5 cm betragen.   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe43.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 44-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 44
+
+Berechnen Sie die Fläche A eines gleichseitigen Dreiecks in cm², 
+wenn die Seite a = 5 cm.   </strong>
+A = <input type="text" id="Eintrag44" maxlength="4" size="1" style= background-color:yellow ></input> cm² <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe44() { 
+                                                
+                          if (Eintrag44.value=="10,8") {alert("Richtig"); document.getElementById("Pruef44").disabled= true;
+                          }  
+                           
+                          else if (Eintrag44.value!=="10,8²" && Eintrag44.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag44").value="10,8"; window.open('Pytha_Aufgabe44.html');           
+                          document.getElementById("Pruef44").disabled= true;}
+                               
+                          else if (Eintrag44.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 45--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 45</nobr>
+
+Berechnen Sie die Fläche A eines gleichschenkligen Dreiecks in cm²,
+wenn die Grundseite c = 3,2 cm und ein Schenkel s = 4,8 cm.  </strong> 
+<button  onclick="window.open('Pytha_Aufgabe45.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 46-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 46
+
+Berechnen Sie die Fläche A einer Raute in cm²,
+wenn a = 3 cm und e = 5 cm.    </strong>
+A = <input type="text" id="Eintrag46" maxlength="3" size="1" style= background-color:yellow ></input> cm² <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe46() { 
+                                                
+                          if (Eintrag46.value=="8,3") {alert("Richtig"); document.getElementById("Pruef46").disabled= true;
+                          }  
+                           
+                          else if (Eintrag46.value!=="8,3²" && Eintrag46.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag46").value="8,3"; window.open('Pytha_Aufgabe46.html');           
+                          document.getElementById("Pruef46").disabled= true;}
+                               
+                          else if (Eintrag46.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 47--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 47</nobr>
+
+Berechnen Sie die Fläche A eines regelmäßigen Sechsecks in cm²,
+wenn die Seite a = 6 cm.    </strong> 
+<button  onclick="window.open('Pytha_Aufgabe47.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 48-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 48
+
+Berechnen Sie die Seite a eines gleichseitigen Dreiecks in cm,
+wenn seine Fläche A = 18 cm² beträgt.   </strong>
+a = <input type="text" id="Eintrag48" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe48() { 
+                                                
+                          if (Eintrag48.value=="6,4") {alert("Richtig"); document.getElementById("Pruef48").disabled= true;
+                          }  
+                           
+                          else if (Eintrag48.value!=="6,4" && Eintrag48.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag48").value="6,4"; window.open('Pytha_Aufgabe48.html');           
+                          document.getElementById("Pruef48").disabled= true;}
+                               
+                          else if (Eintrag48.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 49--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 49</nobr>
+
+Berechnen Sie die Seite a eines regelmäßigen Sechsecks in cm,
+wenn seine Fläche A = 36 cm² beträgt.   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe49.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 50-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 50
+
+Ein gleichschenkliges Dreieck hat einen Umfang U = 16 cm und eine Höhe h = 4 cm.
+Berechnen Sie die Länge der Seiten des Dreiecks in cm.     </strong>
+s = <input type="text" id="Eintrag50" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe50() { 
+                                                
+                          if (Eintrag50.value=="5") {alert("Richtig"); document.getElementById("Pruef50").disabled= true;
+                          }  
+                           
+                          else if (Eintrag50.value!=="5²" && Eintrag50.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag50").value="5"; window.open('Pytha_Aufgabe50.html');           
+                          document.getElementById("Pruef50").disabled= true;}
+                               
+                          else if (Eintrag50.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 51--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 51</nobr>
+
+Berechnen Sie a in cm, wenn r = 3 cm und s = 4,8 cm.  </strong> 
+
+<img src="Aufgabe38.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe51.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 52-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 52
+
+Berechnen Sie s in cm, wenn r = 4 cm und a =  2 cm.    </strong>
+
+<img src="Aufgabe38.jpg" align="middle"> s = <input type="text" id="Eintrag52" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="6,9") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="6,9²" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="6,9"; window.open('Pytha_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 53--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 53</nobr>
+
+Berechnen Sie r in cm, wenn s = 6 cm und a =  2,5 cm.   </strong> 
+
+<img src="Aufgabe38.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe53.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 54-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 54
+
+Einem Würfel mit der Seitenlänge a = 4 cm ist eine Pyramide aufgesetzt mit der Seitenlänge k = 3 cm.
+a) Berechnen Sie die Höhe h der Pyramide in cm.           
+b) Wie weit in cm ist die linke untere Ecke des Würfels von der Spitze der Pyramide entfernt?  </strong>
+
+<img src="Aufgabe39.jpg" align="middle"> h = <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="1") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="1" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="1"; window.open('Pytha_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 55--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 55</nobr>
+
+Eine Pyramide hat als Grundfläche ein gleichseitiges Dreieck. 
+Die Spitze der Pyramide liegt über dem Schwerpunkt des gleichseitigen Dreiecks.
+Berechnen Sie die Höhe h der Pyramide in cm, wenn eine Grundseite a = 9 cm,
+und die Seitenlänge k der Pyramide 14 cm ist.   </strong> 
+
+<img src="Aufgabe40.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe55.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 56-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 56
+
+Eine Pyramide hat als Grundfläche ein gleichseitiges Dreieck. 
+Die Spitze der Pyramide liegt über dem Schwerpunkt des gleichseitigen Dreiecks.
+Berechnen Sie die Höhe h eines Seitendreiecks in cm, wenn die Grundseite
+a = 10 cm und die Seitenlänge k der Pyramide 13 cm ist. </strong>
+
+<img src="Aufgabe40a.jpg" align="middle"> h = <input type="text" id="Eintrag56" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="12") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="12" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="12"; window.open('Pytha_Aufgabe56.html');           
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 57-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 57</nobr>
+
+Ein Satteldach ist 9 m breit und 5 m hoch.
+Wie lang sind die Sparren in m, wenn sie an der Dachtraufe 30 cm überstehen?    </strong> 
+
+<img src="Aufgabe41_a.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe57.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 58-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 58
+
+Ein Satteldach ist 8 m breit und hat 6,20 m lange Sparren, 
+die an der Dachtraufe 20 cm überstehen. 
+Wie hoch ist das Dach in m?         </strong>
+
+<img src="Aufgabe41_b.jpg" align="middle"> Es ist <input type="text" id="Eintrag58" maxlength="3" size="1" style= background-color:yellow ></input> m hoch. <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="4,5") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="4,5" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="4,5"; window.open('Pytha_Aufgabe58.html');           
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 59-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 59</nobr>
+
+Berechnen Sie die Länge der Strecken x und y in m.     </strong> 
+
+<img src="Aufgabe42.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe59.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 60-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+Ein Beobachter sieht aus 150 m Entfernung und unter einem Erhebungswinkel von 30° den Lichtfleck, 
+den ein senkrecht nach oben gerichteter Scheinwerfer an der Wolkenuntergrenze erzeugt.
+Wie hoch stehen die Wolken in m?         </strong>
+h = <input type="text" id="Eintrag60" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="86,6") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="86,6" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="86,6"; window.open('Pytha_Aufgabe60.html');           
+                          document.getElementById("Pruef60").disabled= true;}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 61-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 61</nobr>
+
+Auf einer Karte, Maßstab 1 : 25 000, ist eine Zahnradbahnstrecke 13,3 cm lang.
+Sie überwindet auf dieser Strecke einen Höhenunterschied von 475 m.
+Berechnen Sie die Länge l der Bahnstrecke in m.   </strong> 
+<button  onclick="window.open('Pytha_Aufgabe61.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 62-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+Einem gleichschenkligen, rechtwinkligen Dreieck ist ein gleichseitiges Dreieck einbeschrieben. 
+Drücken Sie b durch a aus.              </strong>
+
+<img src="Aufgabe45.jpg" align="middle"> b = <input type="text" id="Eintrag62" maxlength="4" size="1" style= background-color:yellow ></input> * a <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="0,52") {alert("Richtig"); document.getElementById("Pruef62").disabled= true;
+                          }  
+                           
+                          else if (Eintrag62.value!=="0,52" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag62").value="0,52"; window.open('Pytha_Aufgabe62.html');           
+                          document.getElementById("Pruef62").disabled= true;}
+                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 63-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 63</nobr>
+
+Einem gleichschenkligen, rechtwinkligen Dreieck ist ein gleichseitiges Dreieck einbeschrieben.
+Drücken sie b durch a aus.    </strong> 
+
+<img src="Aufgabe46.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe63.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 64-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 64
+
+Von einem rechtwinkligen Dreieck sind die Hypotenusenabschnitte q = 4 cm und p = 5 cm bekannt.
+Berechnen Sie die Länge der Katheten a und b in cm und die Fläche A in cm².   </strong>
+
+<img src="Aufgabe47.jpg" align="middle"> a = <input type="text" id="Eintrag64" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe64() { 
+                                                
+                          if (Eintrag64.value=="6,7") {alert("Richtig"); document.getElementById("Pruef64").disabled= true;
+                          }  
+                           
+                          else if (Eintrag64.value!=="6,7" && Eintrag64.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag64").value="6,7"; window.open('Pytha_Aufgabe64.html');           
+                          document.getElementById("Pruef64").disabled= true;}
+                               
+                          else if (Eintrag64.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 65-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 65</nobr>
+
+Von einem rechtwinkligen Dreieck sind die Höhe h = 5 cm und der Hypotenusenabschnitt q = 3 cm gegeben. 
+Berechnen Sie die Länge der Seiten a, b und c in cm und die Fläche A in cm².   </strong> 
+
+<img src="Aufgabe47.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe65.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 66-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 66
+
+Berechnen Sie den Inkreisradius ri und den Ankreisradius ra eines rechtwinkligen Dreiecks in cm, 
+wenn die Katheten a = 8 cm und b = 6 cm.               </strong>
+
+<img src="Aufgabe49.jpg" align="middle"> ri = <input type="text" id="Eintrag66" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="2") {alert("Richtig"); document.getElementById("Pruef66").disabled= true;
+                          }  
+                           
+                          else if (Eintrag66.value!=="2" && Eintrag66.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag66").value="2"; window.open('Pytha_Aufgabe66.html');           
+                          document.getElementById("Pruef66").disabled= true;}
+                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 67-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 67</nobr>
+
+Drücken Sie r2 durch r1 aus.     </strong> 
+
+<img src="Aufgabe50.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe67.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 68-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 68
+
+Drücken Sie h1, h2 und r2 durch r1 aus.   </strong>
+
+<img src="Aufgabe51.jpg" align="middle"> h2 = <input type="text" id="Eintrag68" maxlength="4" size="1" style= background-color:yellow ></input> * r<sub>1</sub> <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe68() { 
+                                                
+                          if (Eintrag68.value=="0,87") {alert("Richtig"); document.getElementById("Pruef68").disabled= true;
+                          }  
+                           
+                          else if (Eintrag68.value!=="0,87" && Eintrag68.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag68").value="0,87"; window.open('Pytha_Aufgabe68.html');           
+                          document.getElementById("Pruef68").disabled= true;}
+                               
+                          else if (Eintrag68.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 69-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 69</nobr>
+
+Drücken Sie r2, r3 und r4 durch r1 aus.  </strong> 
+
+<img src="Aufgabe52.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe69.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 70-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 70
+
+Drücken Sie r2 und r3 durch r1 aus.   </strong>
+
+<img src="Aufgabe53.jpg" align="middle"> r2 = <input type="text" id="Eintrag70" maxlength="5" size="2" style= background-color:yellow ></input> * r<sub>1</sub> <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe70() { 
+                                                
+                          if (Eintrag70.value=="0,464") {alert("Richtig"); document.getElementById("Pruef70").disabled= true;
+                          }  
+                           
+                          else if (Eintrag70.value!=="0,464" && Eintrag70.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag70").value="0,464"; window.open('Pytha_Aufgabe70.html');           
+                          document.getElementById("Pruef70").disabled= true;}
+                               
+                          else if (Eintrag70.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 71-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 71</nobr>
+
+Berechnen Sie die Höhe h des dargestellten Gefäßes in dm und das Volumen in dm³,
+wenn g1 = 6 dm, g2 = 8 dm, a = 5 dm und b = 4 dm betragen.     </strong> 
+
+<img src="Aufgabe54.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe71.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 72-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 72
+
+Mit der dargestellten Lehre läßt sich überprüfen, ob ein Spiralbohrer richtig nachgeschliffen ist. 
+Berechnen Sie die Höhe h in mm, wenn alle Maße in mm angegeben sind.         </strong>
+
+<img src="Aufgabe55.jpg" align="middle"> h = <input type="text" id="Eintrag72" maxlength="3" size="1" style= background-color:yellow ></input> mm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="4,6") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="4,6" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="4,6"; window.open('Pytha_Aufgabe72.html');           
+                          document.getElementById("Pruef72").disabled= true;}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 73-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 73</nobr>
+
+Ein Damm hat den dargestellten Querschnitt.
+Berechnen Sie die Länge l der Böschung in m.     </strong> 
+
+<img src="Aufgabe56.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe73.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 74-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 74
+
+Berechnen Sie die Fläche A des einbeschriebenen Quadrates in cm².  </strong>
+
+<img src="Aufgabe57.jpg" align="middle"> A = <input type="text" id="Eintrag74" maxlength="2" size="1" style= background-color:yellow ></input> cm² <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="18") {alert("Richtig"); document.getElementById("Pruef74").disabled= true;
+                          }  
+                           
+                          else if (Eintrag74.value!=="18" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag74").value="18"; window.open('Pytha_Aufgabe74.html');           
+                          document.getElementById("Pruef74").disabled= true;}
+                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 75-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 75</nobr>
+
+Das regelmäßige Sechseck hat eine Fläche von 120 cm². 
+Wie lang ist eine Seite s in cm?      </strong> 
+
+<img src="Aufgabe58.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe75.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 76-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 76
+
+Berechnen Sie die Länge der Seite s in cm. </strong>
+
+<img src="Aufgabe59.jpg" align="middle"> s = <input type="text" id="Eintrag76" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="6,1") {alert("Richtig"); document.getElementById("Pruef76").disabled= true;
+                          }  
+                           
+                          else if (Eintrag76.value!=="6,1" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag76").value="6,1"; window.open('Pytha_Aufgabe76.html');           
+                          document.getElementById("Pruef76").disabled= true;}
+                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 77-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 77</nobr>
+
+Berechnen Sie von dem gleichschenkligen Trapez den Umfang U in cm.  </strong> 
+
+<img src="Aufgabe60.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe77.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 78
+
+Berechnen Sie die Länge der Raumdiagonalen d in cm.   </strong>
+
+<img src="Aufgabe61.jpg" align="middle"> d = <input type="text" id="Eintrag78" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="9,9") {alert("Richtig"); document.getElementById("Pruef78").disabled= true;
+                          }  
+                           
+                          else if (Eintrag78.value!=="9,9" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag78").value="9,9"; window.open('Pytha_Aufgabe78.html');           
+                          document.getElementById("Pruef78").disabled= true;}
+                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 79-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 79</nobr>
+
+Wie tief dürfte das 2 m hohe und mit 25 cm Tiefe gelieferte Regal höchstens sein, 
+wenn es wie skizziert durch die Tür passen soll?   </strong> 
+
+<img src="Aufgabe62.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe79.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 80-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 80
+
+Ein Fluss ist 180 m breit und hat eine Strömungsgeschwindigkeit vF = 0,8 m/s.
+Um ihn zu überqueren braucht ein Schwimmer 5 Minuten.
+a) Um wie viel m wird der Schwimmer dabei seitlich abgetrieben?      
+b) Wie viel m hat der Schwimmer bei der Überquerung zurückgelegt?   </strong>
+
+<img src="Aufgabe63.jpg" align="middle"> a) Es sind <input type="text" id="Eintrag80" maxlength="3" size="1" style= background-color:yellow ></input> m. <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="240") {alert("Richtig"); document.getElementById("Pruef80").disabled= true;
+                          }  
+                           
+                          else if (Eintrag80.value!=="240" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag80").value="240"; window.open('Pytha_Aufgabe80.html');           
+                          document.getElementById("Pruef80").disabled= true;}
+                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 81-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 81</nobr>
+
+Das Dreieck CDE hat eine Fläche von 2 cm². Der Punkt E halbiert die Strecke AB.
+Die Strecke DE ist 1 cm lang.
+Berechnen sie die Längen der Hypotenuse c, der beiden Katheten und b 
+und der Hypotenusenabschnitte q und p.    </strong> 
+
+<img src="Aufgabe64.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 82
+
+Berechnen Sie den Umfang U des farbigen Dreiecks in cm.  </strong>
+
+<img src="Aufgabe65.jpg" align="middle"> U = <input type="text" id="Eintrag82" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="240") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          }  
+                           
+                          else if (Eintrag82.value!=="240" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="240"; window.open('Pytha_Aufgabe82.html');           
+                          document.getElementById("Pruef82").disabled= true;}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 83-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 83</nobr>
+
+Das Dreieck CDE hat eine Fläche von 2 cm². Der Punkt E halbiert die Strecke AB.
+Die Strecke DE ist 1 cm lang.
+Berechnen sie die Längen der Hypotenuse c, der beiden Katheten und b 
+und der Hypotenusenabschnitte q und p.    </strong> 
+
+<img src="Aufgabe66.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 84
+
+Berechnen Sie die Größe der farbigen Fläche A in mm².   </strong>
+
+<img src="Aufgabe67.jpg" align="middle"> A = <input type="text" id="Eintrag84" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="58,9") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
+                          }  
+                           
+                          else if (Eintrag84.value!=="58,9" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="58,9"; window.open('Pytha_Aufgabe84.html');           
+                          document.getElementById("Pruef84").disabled= true;}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 85-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 85</nobr>
+
+Berechnen Sie die farbige Trapezfläche A in mm².  </strong> 
+
+<img src="Aufgabe68.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 86-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 86
+
+Berechnen Sie die Größe der farbigen Fläche A in mm².     </strong>
+
+<img src="Aufgabe69.jpg" align="middle"> A = <input type="text" id="Eintrag86" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="5,25") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;
+                          }  
+                           
+                          else if (Eintrag86.value!=="5,25" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag86").value="5,25"; window.open('Pytha_Aufgabe86.html');           
+                          document.getElementById("Pruef86").disabled= true;}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 87-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 87</nobr>
+
+Berechnen Sie die Länge der Strecke x in mm.  </strong> 
+
+<img src="Aufgabe70.jpg" align="middle"> <button  onclick="window.open('Pytha_Aufgabe87.html');" >Lösung</button></p></pre>   
+
+                
+          <a href="https://joafroehlich.github.io/Mathe/sek1.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>  
+
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
