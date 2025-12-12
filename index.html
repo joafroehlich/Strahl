@@ -107,7 +107,7 @@ wenn |AB| = --- * |CD|.
 
 a verhält sich zu b wie 5 : 4. 
 Schreiben Sie b als Vielfaches von a.              </strong>
-b = <input type="text" id="Eintrag6" maxlength="0,8" size="1" style= background-color:yellow ></input> * a <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button></p></pre>
+b = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> * a <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe6() { 
@@ -115,7 +115,7 @@ b = <input type="text" id="Eintrag6" maxlength="0,8" size="1" style= background-
                           if (Eintrag6.value=="0,8") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
                           }  
                            
-                          else if (Eintrag6.value!=="6,9" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="0,8"; window.open('Strahl_Aufgabe6.html');           
+                          else if (Eintrag6.value!=="0,8" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="0,8"; window.open('Strahl_Aufgabe6.html');           
                           document.getElementById("Pruef6").disabled= true;}
                                
                           else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
