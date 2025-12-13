@@ -138,7 +138,7 @@ wenn die größere 18 cm lang sein soll.         </strong>
 Ein Rechteck ist 6 cm lang und 4 cm breit.
 Eine Seite eines ähnlichen Rechtecks ist 
 12 cm lang, wielang ist die andere?    </strong>
-8 cm oder <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+8 cm oder <input type="text" id="Eintrag8" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
 
   
                       <script>
@@ -535,19 +535,19 @@ Flächeninhalt verdoppeln soll?  </strong>
 Ein quadratisches Bild mit der Seitenlänge a = 8 cm 
 wird auf einem Fotokopiergerät mit dem Faktor 141% 
 vergrößert. Weitere Einstellungen 64%, 71%, 200%.
-a₁) Welche Seitenlänge a' hat das neue Quadrat?
-a₂) Um welchen Faktor hat sich der Flächeninhalt 
+a) Welche Seitenlänge a' hat das neue Quadrat?
+b) Um welchen Faktor hat sich der Flächeninhalt 
 vergrößert? Um = <input type="text" id="Eintrag32" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button>   
-a₃) Ein DIN A4 Blatt soll auf DIN A5 verkleinert werden.
+c) Ein DIN A4 Blatt soll auf DIN A5 verkleinert werden.
 Welcher Kopierfaktor ist einzustellen?            </strong></p></pre>
  
                       <script>
                         function Aufgabe32() { 
                                                 
-                          if (Eintrag32.value=="40,28") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
+                          if (Eintrag32.value=="1,988") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
                           }  
                            
-                          else if (Eintrag32.value!=="40,28" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="40,28"; window.open('Strahl_Aufgabe32.html');           
+                          else if (Eintrag32.value!=="1,988" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="1,988"; window.open('Strahl_Aufgabe32.html');           
                           document.getElementById("Pruef32").disabled= true;}
                                
                           else if (Eintrag32.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -668,10 +668,10 @@ zueinander ähnlich? </strong>
 
 <img src="Aufgabe40.jpg" > 
 
-<button id ="ja" onclick="Schalter2('ja')">ja</button> <button id ="nein" onclick="Schalter2('nein')" >nein</button> </strong></p></pre>
+<button id ="ja" onclick="Schalter1('ja')">ja</button> <button id ="nein" onclick="Schalter1('nein')" >nein</button> </strong></p></pre>
 
                       <script>
-                    function Schalter2(buttonId){
+                    function Schalter1(buttonId){
                                                 
                           if (buttonId==="ja") {alert("Richtig"); document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
                        }                                                                    
@@ -766,10 +766,10 @@ Wie groß sind die Entfernungen in Wirklichkeit?
   <pre><p class ="Aufgabe" ><strong>Aufgabe 46
 
 Wie groß sind die Entfernungen auf der Karte?
-     Maßstab             Wirklichkeit
-   1 : 30 000              1,2 km
-1 : 5 000 000             30 km  </strong>
-l<sub>z</sub> = <input type="text" id="Eintrag46" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+      Maßstab             Wirklichkeit
+a)   1 : 30 000              1,2 km
+b)  1 : 5 000 000            30 km  </strong>
+b) l<sub>z</sub> = <input type="text" id="Eintrag46" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -835,10 +835,10 @@ Bestimmen Sie die Länge der unzugänglichen Strecke DG. </strong>
 
 Ein Turm wirft einen Schatten von 42 m, eine
 davorstehende 1,8 m große Person einen von 2,25 m.
-a₁) Wie hoch ist der Turm?
-a₂) Wie lang ist der Schatten eines 17 m hohen Baumes
+a<sub>1</sub>) Wie hoch ist der Turm?
+a<sub>2</sub>) Wie lang ist der Schatten eines 17 m hohen Baumes
 neben dem Schornstein?
-a₃) Wie hoch wäre der Schornstein, wenn der Schatten 
+a<sub>3</sub>) Wie hoch wäre der Schornstein, wenn der Schatten 
 der Person 15 cm länger wäre?                  </strong>
 <input type="text" id="Eintrag50" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
     
@@ -983,10 +983,10 @@ Team 4: 26,5m. Zu welchem Team passt die Skizze?    </strong>
 Abschätzung einer Gebäudebreite hält man seinen 
 Daumen so vor sich, dass die Daumenbreite die 
 Gebäudebreite genau verdeckt.
-a₁) Wie breit ist ein Gebäude, 510 m entfernt, 
+a<sub>1</sub>) Wie breit ist ein Gebäude, 510 m entfernt, 
 bei einerDaumenbreite von 2,4 cm und einem 
 Abstand zum Auge von 64 cm?
-a₂) Wie weit ist ein 12 m breites Haus vom Auge 
+a<sub>2</sub>) Wie weit ist ein 12 m breites Haus vom Auge 
 entfernt, wenn es von einer Daumenbreite von 2,2 cm 
 33 cm vor dem Auge verdeckt wird?                 </strong>
 <input type="text" id="Eintrag58" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
@@ -1253,7 +1253,7 @@ d = <input type="text" id="Eintrag72" maxlength="3" size="1" style= background-c
                           if (Eintrag72.value=="9,8") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
                           }  
                            
-                          else if (Eintrag72.value!=="9,8" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="9,8; window.open('Strahl_Aufgabe72.html');"           
+                          else if (Eintrag72.value!=="9,8" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="9,8"; window.open('Strahl_Aufgabe72.html');           
                           document.getElementById("Pruef72").disabled= true;}
                                
                           else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -1431,10 +1431,10 @@ c = <input type="text" id="Eintrag82" maxlength="1" size="1" style= background-c
                       <script>
                         function Aufgabe82() { 
                                                 
-                          if (Eintrag82.value=="2") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          if (Eintrag82.value=="6") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
                           }  
                            
-                          else if (Eintrag82.value!=="2" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="2"; window.open('Strahl_Aufgabe82.html');           
+                          else if (Eintrag82.value!=="6" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="6"; window.open('Strahl_Aufgabe82.html');           
                           document.getElementById("Pruef82").disabled= true;}
                                
                           else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -1472,7 +1472,7 @@ d = <input type="text" id="Eintrag84" maxlength="4" size="1" style= background-c
                           if (Eintrag84.value=="7,83") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
                           }  
                            
-                          else if (Eintrag84.value!=="7,83" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="57,83"; window.open('Strahl_Aufgabe84.html');           
+                          else if (Eintrag84.value!=="7,83" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="7,83"; window.open('Strahl_Aufgabe84.html');           
                           document.getElementById("Pruef84").disabled= true;}
                                
                           else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -1627,8 +1627,9 @@ x = <input type="text" id="Eintrag92" maxlength="3" size="1" style= background-c
                       
     <pre><p class="Aufgabe"><strong>Aufgabe 93
 
-In welchem Verhältnis teilt M die Höhe des Trapezes, 
-wenn AB = 4,5 cm, AM = 2,8 cm und DM = 1,6 cm.   </strong> 
+In welchem Verhältnis teilt M die Höhe des 
+gleichschenkligen Trapezes, wenn AB = 4,5 cm, 
+AM = 2,8 cm und DM = 1,6 cm.   </strong> 
 
 <img src="Aufgabe93.jpg" > 
 
@@ -1674,7 +1675,8 @@ wenn AC = 63 m, CE = 14 m, BD = 10 m und BC||DE.  </strong>
 
 Wie hoch ist ein Turm, der einen Schatten von 10 m 
 hat, im Vergleich zu einem 2 m langen Stab, der parallel 
-zu dem Turm steht und einen Schatten von 95 cm hat? </strong>
+zu dem Turm steht und einen Schatten von 95 cm hat?
+Die Schattenenden treffen sich in einem Punkt. </strong>
 Es sind <input type="text" id="Eintrag96" maxlength="5" size="2" style= background-color:yellow ></input> m. <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre> 
   
                       <script>
@@ -1922,15 +1924,15 @@ wenn FG = 24 m, DF = 40 m und DE = 36 m.     </strong>
 Wie groß ist die Seite a' eines Dreiecks mit einem 
 Umkreisradius von 4,5 cm, das ähnlich ist dem Dreieck 
 mit a = 2,8 cm, b = 3,9 cm, γ = 48°?    </strong> 
-a' = <input type="text" id="Eintrag110" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+a' = <input type="text" id="Eintrag110" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
   
                       <script>
                         function Aufgabe110() { 
                                                 
-                          if (Eintrag110.value=="80") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
+                          if (Eintrag110.value=="6,45") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
                           }  
                            
-                          else if (Eintrag110.value!=="80" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="80"; window.open('Strahl_Aufgabe110.html');           
+                          else if (Eintrag110.value!=="6,45" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="6,45"; window.open('Strahl_Aufgabe110.html');           
                           document.getElementById("Pruef110").disabled= true;}
                                
                           else if (Eintrag110.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -1953,7 +1955,8 @@ senkrechten Stützen?     </strong>
   <pre><p class ="Aufgabe" ><strong>Aufgabe 112
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Parallelogramms.     </strong> 
+an der Gesamtfläche A des Parallelogramms.  
+CD ist in 3 gleiche Abschnitte unterteilt.   </strong> 
 
 <img src="Aufgabe112.jpg" >
 
@@ -1977,7 +1980,8 @@ A'/A = 3/<input type="text" id="Eintrag112" maxlength="2" size="1" style= backgr
     <pre><p class="Aufgabe"><strong>Aufgabe 113
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Parallelogramms.    </strong> 
+an der Gesamtfläche A des Parallelogramms. 
+CD ist in 3, DA in 2 gleiche Teile unterteilt.   </strong> 
 
 <img src="Aufgabe113.jpg" >
 
@@ -1989,19 +1993,20 @@ an der Gesamtfläche A des Parallelogramms.    </strong>
   <pre><p class ="Aufgabe" ><strong>Aufgabe 114
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Parallelogramms.       </strong> 
+an der Gesamtfläche A des Parallelogramms.
+AD und AB sind in 3 gleiche Abschnitte unterteilt.        </strong> 
 
 <img src="Aufgabe114.jpg" >
 
-A'/A = 3/<input type="text" id="Eintrag114" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre> 
+A'/A = 4/<input type="text" id="Eintrag114" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre> 
   
                       <script>
                         function Aufgabe114() { 
                                                 
-                          if (Eintrag114.value=="4") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          if (Eintrag114.value=="45") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
                           }  
                            
-                          else if (Eintrag114.value!=="4" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="4"; window.open('Strahl_Aufgabe114.html');           
+                          else if (Eintrag114.value!=="45" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="45"; window.open('Strahl_Aufgabe114.html');           
                           document.getElementById("Pruef114").disabled= true;}
                                
                           else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -2013,7 +2018,8 @@ A'/A = 3/<input type="text" id="Eintrag114" maxlength="1" size="1" style= backgr
     <pre><p class="Aufgabe"><strong>Aufgabe 115
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Dreiecks.   </strong> 
+an der Gesamtfläche A des Dreiecks.
+AB und AC sind in 3 gleiche Teile unterteilt.   </strong> 
 
 <img src="Aufgabe115.jpg" >
 
@@ -2024,7 +2030,8 @@ an der Gesamtfläche A des Dreiecks.   </strong>
   <pre><p class ="Aufgabe" ><strong>Aufgabe 116
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Dreiecks.        </strong> 
+an der Gesamtfläche A des Dreiecks. 
+AB, BC und CA sind in 3 gleiche Abschnitte unterteilt.       </strong> 
 
 <img src="Aufgabe116.jpg" >
 
@@ -2048,7 +2055,8 @@ A'/A = 1/<input type="text" id="Eintrag116" maxlength="1" size="1" style= backgr
     <pre><p class="Aufgabe"><strong>Aufgabe 117
 
 Bestimmen Sie den Anteil der farbigen Fläche A' 
-an der Gesamtfläche A des Dreiecks.    </strong> 
+an der Gesamtfläche A des Dreiecks. 
+AB ist in 3 gleiche Abschnitte unterteilt.   </strong> 
 
 <img src="Aufgabe117.jpg" >
 
@@ -2058,8 +2066,8 @@ an der Gesamtfläche A des Dreiecks.    </strong>
 
   <pre><p class ="Aufgabe" ><strong>Aufgabe 118
 
-Wie groß ist die farbige Fläche A des Trapezes, 
-wenn AB = 200 mm, AD = 120 mm und CD = 56 mm?          </strong> 
+Wie groß ist die farbige Fläche A des gleichschenkligen 
+Trapezes, wenn AB = 200 mm, AD = 120 mm und CD = 56 mm?          </strong> 
 
 <img src="Aufgabe118.jpg" >
 
